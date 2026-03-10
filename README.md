@@ -12,12 +12,17 @@ A Discourse theme component that displays default admin-configured titles for us
 
 ## How It Works
 
-The component uses Discourse's `poster-name-user-title` value transformer to intercept title display. When a user's title would normally be empty, the component checks their trust level and returns the corresponding configured default title instead.
+The component uses multiple Discourse integration points to ensure trust level titles appear everywhere user titles are displayed:
 
-This means:
+1. **Value Transformer**: Uses the `poster-name-user-title` transformer to display titles in post author metadata
+2. **Plugin Connectors**: Injects title display into user cards and user profiles via `user-card-post-names` and `user-post-names` connectors
+3. **User Model Extension**: Adds a `displayTitle` property to the User model for programmatic access
+
+This comprehensive approach ensures:
 - Users with custom titles (from badges or groups) will continue to see their custom titles
 - Users without custom titles will see the default title for their trust level (if configured)
-- The titles appear in all standard locations where user titles are displayed
+- The titles appear in all standard locations: posts, user cards, user profiles, and anywhere else titles are displayed
+- Theme components and plugins can access the computed title via `user.displayTitle`
 
 ## Styling
 
