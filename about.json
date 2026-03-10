@@ -1,0 +1,9 @@
+{
+  "name": "Trust Level Titles",
+  "about_url": null,
+  "license_url": null,
+  "component": true,
+  "authors": null,
+  "theme_version": "1.0.0",
+  "minimum_discourse_version": "3.2.0"
+}

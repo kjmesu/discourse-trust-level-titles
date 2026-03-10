@@ -1,0 +1,3 @@
+en:
+  theme_metadata:
+    description: "Displays default admin-configured titles for users based on their trust level when no custom title is set"

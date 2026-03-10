@@ -1,0 +1,29 @@
+trust_level_0_title:
+  type: string
+  default: ""
+  description:
+    en: "Default title for Trust Level 0 (New User). Leave empty to show no title."
+
+trust_level_1_title:
+  type: string
+  default: ""
+  description:
+    en: "Default title for Trust Level 1 (Basic User). Leave empty to show no title."
+
+trust_level_2_title:
+  type: string
+  default: ""
+  description:
+    en: "Default title for Trust Level 2 (Member). Leave empty to show no title."
+
+trust_level_3_title:
+  type: string
+  default: ""
+  description:
+    en: "Default title for Trust Level 3 (Regular). Leave empty to show no title."
+
+trust_level_4_title:
+  type: string
+  default: ""
+  description:
+    en: "Default title for Trust Level 4 (Leader). Leave empty to show no title."

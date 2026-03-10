@@ -1,0 +1,10 @@
+.user-title {
+  &.user-title--trust-level-0,
+  &.user-title--trust-level-1,
+  &.user-title--trust-level-2,
+  &.user-title--trust-level-3,
+  &.user-title--trust-level-4 {
+    font-style: italic;
+    opacity: 0.8;
+  }
+}
